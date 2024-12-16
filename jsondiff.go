@@ -671,7 +671,7 @@ func isControlCharacter(char rune) bool {
 }
 
 // maxLineLength is the maximum length of a line before it is wrapped.
-const maxLineLength = 50
+const maxLineLength = 120
 
 // breakLines breaks the input string into lines of a specified maximum length.
 // input: The string to be processed and broken into lines.
