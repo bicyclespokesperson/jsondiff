@@ -732,7 +732,7 @@ func insertEmptyLines(lines []string) []string {
 		result = append(result, lines[i]) // Append the current line to the result slice.
 
 		// Check if the current line and the next line start with the same symbol.
-		if i < len(lines)-1 && lines[i] != "" && lines[i][0] == lines[i+1][0] {
+		if i < len(lines)-1 && lines[i] != "" && lines[i+1] == "" && lines[i][0] == lines[i+1][0] {
 			result = append(result, "") // Insert an empty line between consecutive elements with the same symbol.
 		}
 	}
